@@ -1,3 +1,6 @@
+Note: If you're using Elasticsearch 7, you'll need to install a beta release of Elastalert: `pip install "elastalert>=0.2.0b"`
+
+
 [![Stories in Ready](https://badge.waffle.io/Yelp/elastalert.png?label=ready&title=Ready)](https://waffle.io/Yelp/elastalert)
 [![Stories in In Progress](https://badge.waffle.io/Yelp/elastalert.png?label=in%20progress&title=In%20Progress)](https://waffle.io/Yelp/elastalert)
 [![Build Status](https://travis-ci.org/Yelp/elastalert.svg)](https://travis-ci.org/Yelp/elastalert)
@@ -47,12 +50,15 @@ Currently, we have built-in support for the following alert types:
 - MS Teams
 - Slack
 - Telegram
+- GoogleChat
 - AWS SNS
 - VictorOps
 - PagerDuty
+- PagerTree
 - Exotel
 - Twilio
 - Gitter
+- Line Notify
 
 Additional rule types and alerts can be easily imported or written.
 
@@ -88,11 +94,11 @@ Eg: ``--rule this_rule.yaml``
 
 ## Third Party Tools And Extras
 ### Kibana plugin
-![img](https://www.bitsensor.io/assets/img/screenshots/template.gif)
-Available at the [ElastAlert Kibana plugin repository](https://github.com/bitsensor/elastalert-kibana-plugin)
+![img](https://raw.githubusercontent.com/bitsensor/elastalert-kibana-plugin/master/showcase.gif)
+Available at the [ElastAlert Kibana plugin repository](https://github.com/bitsensor/elastalert-kibana-plugin).
 
 ### Docker
-A [Dockerized version](https://github.com/bitsensor/elastalert) of ElastAlert including a REST api is build from `master` to `bitsensor/elastalert:latest`. 
+A [Dockerized version](https://github.com/bitsensor/elastalert) of ElastAlert including a REST api is build from `master` to `bitsensor/elastalert:latest`.
 
 ```bash
 git clone https://github.com/bitsensor/elastalert.git; cd elastalert
